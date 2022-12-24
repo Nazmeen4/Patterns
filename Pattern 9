@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+
+     // write ur code here
+     int n,i,j,sp,st,s;
+     n=scn.nextInt();
+     st=1;
+     sp=n/2;
+     s=0;
+     for(i=0;i<n;i++){
+        for(j=0;j<sp;j++)
+            System.out.print("\t");
+        System.out.print("*");
+        for(j=0;j<s;j++)
+            System.out.print("\t");
+        if(i>0&&i<n-1)
+            System.out.print("*\t");
+        if(i<n/2){
+            s+=2;
+            sp--;
+        }
+        else{
+            s-=2;
+            sp++;
+        }
+        System.out.println();
+        
+     }
+
+ }
+}
