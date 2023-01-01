@@ -1,0 +1,29 @@
+import java.util.*;
+class First{
+    public static void main(String args[]){
+        //Scanner sc=new Scanner(System.in);
+        int n,i,j;
+        int a[][]=new int[10][10];
+        int sp,st;
+        sp=8;
+        st=1;
+        for(i=0;i<10;i++){
+            for(j=0;j<st;j++)
+                System.out.print("*");
+            for(j=0;j<sp;j++)
+                System.out.print(" ");
+            for(j=0;j<st;j++)
+                System.out.print("*");
+            if(i<4){
+                st++;
+                sp-=2;
+            }
+            else{
+                sp+=2;
+                st--;
+            }
+            System.out.println();
+        
+        }
+    }    
+}
